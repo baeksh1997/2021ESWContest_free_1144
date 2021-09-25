@@ -1,0 +1,16 @@
+<launch>
+
+    <include file="$(find ros_gui)/launch/gui_trailer.launch">
+    </include>
+
+    <group ns="tras">
+        <node name="vision_path_planning" pkg="vision_path_planning" type="vision_path_planning">
+        </node>
+        <node name="inverse_kinematics_auto" pkg="auto_drive" type="inverse_kinematics_auto" output="screen">
+        </node>
+    </group>
+
+    <include file="$(find robot_pose_ekf)/robot_pose_ekf.launch">
+    </include>
+
+</launch>

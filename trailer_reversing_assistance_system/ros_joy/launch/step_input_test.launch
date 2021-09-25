@@ -1,0 +1,10 @@
+<launch>
+
+    <group ns="joy">
+        <node name="joy_node" pkg="ros_joy" type="joy_node">
+        </node>
+        <node name="step_input_test" pkg="ros_joy" type="step_input_test" output="screen">
+        </node>
+    </group>
+  
+</launch>

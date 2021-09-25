@@ -1,0 +1,10 @@
+<launch>
+
+    <group ns="gui">
+        <node name="gui_streaming" pkg="ros_gui" type="gui_streaming" >
+        </node>
+        <node name="gui_wheel" pkg="ros_gui" type="gui_wheel">
+        </node>
+    </group>
+
+</launch>
